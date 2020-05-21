@@ -6,14 +6,17 @@ import vans from './vans.jpg'
 export class Produto extends Component {
     constructor(props) {
         super(props)
-        debugger
         this.produto = props.produto;
+    }
+
+    click() {
+        alert('tese');
     }
 
     render() {
         return (
             <div className="pas__produto">
-                <div className="pas__produto-image">
+                <div className="pas__produto-image" onClick={() => this.click()}>
                     <img src={vans} alt=""/>
                 </div>
                 <div>{this.produto.nome}</div>

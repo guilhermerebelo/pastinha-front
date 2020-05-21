@@ -32,14 +32,12 @@ export class PasGaleriaHome extends Component {
         return (
             <section className="container pas__galeria-home-container">
                 <div className="row">
-
                     {this.produtos.map(item =>
                         <div className="col-md-3 pas__galeria-home-content">
                             <Produto produto={item}/>
-                        </div>)}
-
+                        </div>
+                    )}
                 </div>
-
                 <div className="pas__galeria-home-btn">
                     <button className="btn btn-block btn-primary">VER TUDO</button>
                 </div>
