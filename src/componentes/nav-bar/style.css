@@ -1,0 +1,11 @@
+/* .pas__header {
+} */
+
+.pas__header_content {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}

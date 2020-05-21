@@ -1,0 +1,17 @@
+.pas__galeria-home-container {
+    position: relative;
+    background-color: yellowgreen;
+}
+
+.pas__galeria-home-content {
+    height: 200px;
+}
+
+.pas__galeria-home-btn {
+    width: 150px;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

@@ -1,0 +1,19 @@
+.pas__banner_background {
+    background-color: teal;
+}
+
+.pas__banner_container {
+    height: 450px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.pas__banner_content {
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}

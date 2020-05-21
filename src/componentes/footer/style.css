@@ -1,0 +1,17 @@
+.pas__footer-container {
+    background-color: #181818;
+    color: #BFBFBF;
+}
+
+.pas__footer-content {
+    height: 180px;
+}
+
+.pas__footer-empresa-container {
+    background-color: #2E2D2D;
+    color: #666464;
+}
+
+.pas__footer-empresa-content {
+    height: 40px;
+}
