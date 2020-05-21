@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import './style.css'
 
+import banner from './banner.jpg'
+
+const backgroundColor = { backgroundImage: `url(${banner})` }
+
 export class PasBanner extends Component {
     render() {
         return (
-            <section className="container pas__banner_background">
+            <section className="container pas__banner_background" style={backgroundColor}>
                 <div className="row">
                     <div className="col-md-12 pas__banner_container">
 
