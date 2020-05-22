@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './global.css';
 
 import PasNavBar from './componentes/nav-bar'
 import PasBanner from './componentes/banner'
