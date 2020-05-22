@@ -32,8 +32,8 @@ export class PasGaleriaHome extends Component {
         return (
             <section className="container pas__galeria-home-container">
                 <div className="row">
-                    {this.produtos.map(item =>
-                        <div className="col-md-3 pas__galeria-home-content">
+                    {this.produtos.map((item, i) =>
+                        <div key={i} className="col-md-3 pas__galeria-home-content">
                             <Produto produto={item}/>
                         </div>
                     )}

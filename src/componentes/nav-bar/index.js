@@ -1,25 +1,27 @@
 import React, { Component } from 'react'
+import { slide as Menu } from 'react-burger-menu'
 import './style.css'
 
 export class PasNavBar extends Component {
+
     render() {
         return (
-            <header className="container">
+            <nav className="container pas__header-container">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="pas__header_content">
+                        <div className="pas__header-content">
                             <div>
-                                <img src="" alt=""/>
-                                logo
+                                <img style={{height: '120px'}} src="https://www.freepnglogos.com/uploads/vans-logo-png/vans-hd-photo-logo-9.png" alt=""/>
                             </div>
-                            <div>
-                                <i></i>
-                                menu
+                            <div className="position-relative">
+                                <Menu right>
+                                    <a id="home" className="menu-item" href="/">Home</a>
+                                </Menu>
                             </div>
                         </div>
                     </div>
                 </div>        
-            </header>
+            </nav>
         )
     }
 }

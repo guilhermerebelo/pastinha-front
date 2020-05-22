@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './style.css'
 
-import banner from './banner.jpg'
-
-const backgroundColor = { backgroundImage: `url(${banner})` }
+const backgroundColor = { 
+    backgroundImage: `url(https://cdn.wallpapersafari.com/64/74/h3B7v0.jpg)`, 
+    backgroundSize: 'cover'
+}
 
 export class PasBanner extends Component {
     render() {
@@ -13,9 +14,11 @@ export class PasBanner extends Component {
                     <div className="col-md-12 pas__banner_container">
 
                         <div className="pas__banner_content">
-                            <h1>SEJA SEMPRE ORIGINAL</h1>
+                            <h1 style={{fontSize: '80px'}}>SEJA SEMPRE ORIGINAL</h1>
                             <p>NOVOS ITENS AQUI</p>
-                            <button className="btn btn-block btn-primary">COMPRAR</button>
+                            <div>
+                                <button className="btn btn-primary">COMPRAR</button>
+                            </div>
                         </div>
                         
                     </div>
