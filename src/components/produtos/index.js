@@ -11,6 +11,7 @@ function Produtos() {
 
         for (let i = 0; i < total; i++) {
             produtos.push({
+                id: i + 1,
                 nome: `Vans ${i}`,
                 preco: "550"
             });

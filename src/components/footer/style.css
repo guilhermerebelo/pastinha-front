@@ -6,9 +6,9 @@
 .pas__footer-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    height: 260px;
+    height: 240px;
 }
 
 

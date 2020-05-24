@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 const backgroundColor = { 
-    backgroundImage: `url(https://cdn.wallpapersafari.com/64/74/h3B7v0.jpg)`, 
+    backgroundImage: `url(https://pablovaz.files.wordpress.com/2014/04/2dfa8-dsc_9884_1.png)`, 
     backgroundSize: 'cover'
 }
 
@@ -15,7 +15,7 @@ export class PasBanner extends Component {
                 <div className="row">
                     <div className="col-md-12 pas__banner_container">
 
-                        <div className="pas__banner_content">
+                        {/* <div className="pas__banner_content">
                             <h1 style={{fontSize: '80px'}}>SEJA SEMPRE ORIGINAL</h1>
                             <p>NOVOS ITENS AQUI</p>
                             <div>
@@ -23,7 +23,7 @@ export class PasBanner extends Component {
                                     <button className="btn btn-primary">COMPRAR</button>
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                         
                     </div>
                 </div>        
