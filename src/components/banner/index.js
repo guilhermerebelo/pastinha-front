@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
 import './style.css'
+
+import React, { Component } from 'react'
+import { Link, useHistory } from 'react-router-dom'
 
 const backgroundColor = { 
     backgroundImage: `url(https://cdn.wallpapersafari.com/64/74/h3B7v0.jpg)`, 
@@ -17,7 +19,9 @@ export class PasBanner extends Component {
                             <h1 style={{fontSize: '80px'}}>SEJA SEMPRE ORIGINAL</h1>
                             <p>NOVOS ITENS AQUI</p>
                             <div>
-                                <button className="btn btn-primary">COMPRAR</button>
+                                <Link to="/produtos">
+                                    <button className="btn btn-primary">COMPRAR</button>
+                                </Link>
                             </div>
                         </div>
                         

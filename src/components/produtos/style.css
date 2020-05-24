@@ -1,0 +1,22 @@
+.pas__produto {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    text-align: center;
+    /* max-height: 300px;
+    max-width: 200px; */
+}
+
+.pas__produto-image {
+    margin: auto;
+    margin-bottom: 25px;
+    transition: all 0.2s
+}
+
+.pas__produto-image:hover {
+    -moz-transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	transform: scale(1.1);
+}
+

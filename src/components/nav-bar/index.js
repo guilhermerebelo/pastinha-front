@@ -1,29 +1,60 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom'
 import './style.css'
 
-export class PasNavBar extends Component {
+const MENU_OPTIONS = [
+    {
+        key: 'HOME',
+        description: 'Home',
+        router: ''
+    },
+    {
+        key: 'LOJA',
+        description: 'Loja',
+        router: 'produtos'
+    },
+    {
+        key: 'SOBRE',
+        description: 'Sobre',
+        router: 'sobre'
+    },
+    {
+        key: 'CONTATO',
+        description: 'Contato',
+        router: 'contato'
+    },
+];
 
-    render() {
-        return (
-            <nav className="container pas__header-container">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="pas__header-content">
-                            <div>
+export function PasNavBar(){
+    const menuOptions = MENU_OPTIONS;
+
+    return (
+        <nav className="container pas__header-container">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="pas__header-content">
+                        <div>
+                            <Link to="">
                                 <img style={{height: '120px'}} src="https://www.freepnglogos.com/uploads/vans-logo-png/vans-hd-photo-logo-9.png" alt=""/>
-                            </div>
-                            <div className="position-relative">
-                                <Menu right>
-                                    <a id="home" className="menu-item" href="/">Home</a>
-                                </Menu>
-                            </div>
+                            </Link>
+                        </div>
+                        <div className="position-relative">
+                            <Menu right>
+                                {menuOptions.map((item, i) =>
+                                    <li key={i}>
+                                        <Link to={item.router}>
+                                            <a>{item.description}</a>
+                                        </Link>
+                                    </li>
+                                )}
+                            </Menu>
                         </div>
                     </div>
-                </div>        
-            </nav>
-        )
-    }
+                </div>
+            </div>        
+        </nav>
+    )
 }
 
 export default PasNavBar

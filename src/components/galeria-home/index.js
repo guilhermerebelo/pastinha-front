@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
 import './style.css'
+
+import React, { Component } from 'react'
+import { Link, useHistory } from 'react-router-dom';
 
 import Produto from '../produto'
 
@@ -39,7 +41,9 @@ export class PasGaleriaHome extends Component {
                     )}
                 </div>
                 <div className="pas__galeria-home-btn">
-                    <button className="btn btn-block btn-primary">VER TUDO</button>
+                    <Link to="/produtos">
+                        <button className="btn btn-block btn-primary">VER TUDO</button>
+                    </Link>
                 </div>
             </section>
         )
