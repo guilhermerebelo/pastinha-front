@@ -27,7 +27,7 @@ function VisualizarProduto() {
                     <h4>R$ 250,00</h4>
                     <input type="number" placeholder="Quantidade" className="pas__form" name="quantidade" id=""/>
                     <br/><br/>
-                    <button className="btn btn-dark btn-block">COMPRAR</button>
+                    <button className="btn btn-dark btn-block" onClick={() => alert('falta criar carrinho, checkout e login usuario')}>COMPRAR</button>
                     <br/><br/>
                 </div>
             </div>
