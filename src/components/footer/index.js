@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaPinterest, FaYoutube, FaWhatsapp } from 'react-icons/fa'
+import SocialIcons from '../social-icons'
 import './style.css'
 
 import { Link, useHistory } from 'react-router-dom'
@@ -36,19 +36,13 @@ export function PasFooter() {
                         <ul className="text-left">
                             {MENU.map((item, i) =>
                                 <li key={i}>
-                                    <Link to={item.router}>
-                                        <a>{item.description}</a>
+                                    <Link to={`/${item.router}`}>
+                                        <span>{item.description}</span>
                                     </Link>
                                 </li>
                             )}
                         </ul>
-                        <div>
-                            <FaFacebookF style={{fontSize: '25px', marginRight: '15px'}}/>
-                            <FaInstagram style={{fontSize: '25px', marginRight: '15px'}}/>
-                            <FaPinterest style={{fontSize: '25px', marginRight: '15px'}}/>
-                            <FaYoutube style={{fontSize: '25px', marginRight: '15px'}}/>
-                            <FaWhatsapp style={{fontSize: '25px', marginRight: '15px'}}/>
-                        </div>
+                        <SocialIcons />
                     </div>
                 </div>
             </footer>

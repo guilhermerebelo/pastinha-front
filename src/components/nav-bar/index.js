@@ -1,6 +1,7 @@
 import React from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
+import SocialIcons from '../social-icons'
 import './style.css'
 
 const MENU_OPTIONS = [
@@ -43,11 +44,12 @@ export function PasNavBar(){
                             <Menu right>
                                 {menuOptions.map((item, i) =>
                                     <li key={i}>
-                                        <Link to={item.router}>
-                                            <a>{item.description}</a>
+                                        <Link to={`/${item.router}`}>
+                                            <span>{item.description}</span>
                                         </Link>
                                     </li>
                                 )}
+                                <SocialIcons style={{bottom: '50px', position: 'absolute'}}/>
                             </Menu>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ const BACKGROUND_COLOR = {
 
 function contato() {
   return (
-      <div className="container pas__vertical-space-60">
+    <div className="container pas__vertical-space-60">
         <div className="row">
             <div className="col-md-6" style={BACKGROUND_COLOR}/>
             <div className="col-md-6 bg-light text-center pas__vertical-space-60 pas__horizontal-space-60">
@@ -19,7 +19,7 @@ function contato() {
                     <p>EM CASO DE DÚVIDAS</p>
                 </div>
                 <div>
-                    <input className="pas__form" type="text" name="" id="" placeHolder="Nome"/>
+                    <input className="pas__form" type="text" name="" id="" placeholder="Nome"/>
                 </div>
                 <div>
                     <input className="pas__form" type="text" name="" id="" placeholder="Assunto"/>

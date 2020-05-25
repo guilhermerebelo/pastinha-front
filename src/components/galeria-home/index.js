@@ -31,7 +31,7 @@ export function PasGaleriaHome() {
                 )}
             </div>
             <div className="pas__galeria-home-btn">
-                <Link to="/produtos">
+                <Link to="produtos">
                     <button className="btn btn-block btn-primary">VER TUDO</button>
                 </Link>
             </div>
